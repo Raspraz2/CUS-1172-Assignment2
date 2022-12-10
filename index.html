@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"?>
+        <title>Task-List App</title>
+        <link rel="styleSheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main-container">
+            <header> <h1>Task-List App</h1></header>
+            <form>
+                <p class="input-title"><input type="text" placeholder="Enter the task title here" /></p>
+                <p class="select-priority">
+                    <select >
+                        <option value="">Select Priority</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High-priority"> High Priority</option>
+                    </select>
+                </p>
+                <p class="choose-status">
+                    <h3>Select Status</h3>
+                    <p><input type="radio" name="status" value="pending" class="radio"/> <span>Pending</span></p>
+                    <p><input type="radio" name="status" value="completed" class="radio"/> <span>Completed</span></p>
+                </p>
+
+                <p class="submit-btn"><button>Submit Task</button></p>
+            </form>
+            
+            <div class="list-container">
+                <h3>Task Lists</h3>
+                <ul>
+                    <li class="task-container">
+                        <span class="title">Title 1</span>
+                        <span class="priority">Task Priority</span>
+                        <span class="status">Task status</span>
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn">Mark as complete</button>
+                    </li>
+
+                    <li class="task-container">
+                        <span class="title">Title 1</span>
+                        <span class="priority">Task Priority</span>
+                        <span class="status">Task status</span>
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn">Mark as complete</button>
+                    </li>
+
+                    <li class="task-container">
+                        <span class="title">Title 1</span>
+                        <span class="priority">Task Priority</span>
+                        <span class="status">Task status</span>
+                        <button class="remove-btn">Remove</button>
+                        <button class="mark-btn">Mark as complete</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
